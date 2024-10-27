@@ -1,0 +1,128 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    color: black;
+    z-index: 999;
+    display: none;
+    padding: 0 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__container {
+    position: relative;
+    padding: 36px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.modal__opened {
+    display: flex;
+    }
+
+.modal__heading {
+    font-family: "Inter", Arial, sans-serif;
+font-size: 24px;
+font-weight: 900;
+line-height: 29.05px;
+text-align: left;
+width: 330px;
+height: 23px;
+margin: auto;
+}
+
+.modal__button {
+    width: 358px;
+    height: 50.15px;
+    border-radius: 2px;
+    font-family: "Inter", Arial, sans-serif;
+font-size: 14px;
+background-color: black;
+color: #fff;
+}
+
+.modal__form {
+    width: 360px;
+    height: 225px;
+}
+
+.modal__title {
+    width: 358px;
+    height: 27.26px;
+    border: 1px;
+    margin-top: 30px;
+    margin-bottom: 29.74px;
+    border-bottom: rgb(84 84 84 / 0.2) solid 1px;
+}
+
+.modal__description {
+    width: 358px;
+    height: 27.26px;
+    border: 1px;
+    margin-bottom: 48px;
+    border-bottom: rgb(84 84 84 / 0.2) solid 1px;
+}
+
+.modal__close {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: calc(100% + 5px);
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/Close.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 636px) {
+    .modal__title {
+        font-family: Inter;
+font-size: 18px;
+font-weight: 900;
+line-height: 21.78px;
+text-align: left;
+    }
+
+    .modal__title {
+        width: 238px;
+height: 27px;
+border: 1px;
+border-bottom: rgb(84 84 84 / 0.2) solid 1px;
+    }
+
+    .modal__description {
+        width: 238px;
+height: 27px;
+border: 1px;
+border-bottom: rgb(84 84 84 / 0.2) solid 1px;
+    }
+
+    .modal__close {
+        width: 26px;
+        height: 26px;
+        top: -45px;
+        left: 260px;    
+    }
+
+    .modal__container {
+        width: 245px;
+        height: 243px;
+        border: 1px;
+        padding: 25px;
+    }
+
+    .modal__button {
+        width: 238px;
+height: 46px;
+border-radius: 2px;
+    }
+}
